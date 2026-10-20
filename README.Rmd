@@ -38,7 +38,7 @@ av_runShiny()
 ```
 
 Alternatively, download the function files into your own user directory, and add that directory to the "User Function Directory"
-box on the <span style="border: 1px solid #000000; padding: 2px 6px;">AVOPTS</span> tab.
+box on the <span style="border: 1px solid #000000; padding: 2px">AVOPTS</span> tab.
 
 ## Function List
 
@@ -50,7 +50,4 @@ The following table shows which functions are in which files:
 |OLAST| -- |`eq_opts.r`|Table of Last downloaded options per ticker|
 |GPIV|Needs IV surface|`eq_opts.r`|Graph implied volatilities|
 |GPIVS|Needs IV Surface|`eq_opts.R`|Graph Implied Volatilite Spreads|
-
-
-
 

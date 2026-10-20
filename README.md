@@ -33,8 +33,7 @@ following:
 
 Alternatively, download the function files into your own user directory,
 and add that directory to the “User Function Directory” box on the
-<span style="border: 1px solid #000000; padding: 2px 6px;">AVOPTS</span>
-tab.
+<span style="border: 1px solid #000000; padding: 2px">AVOPTS</span> tab.
 
 ## Function List
 
