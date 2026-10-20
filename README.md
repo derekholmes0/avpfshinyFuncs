@@ -1,0 +1,48 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# AlphavantagePF Shiny Functions
+
+This repository collects useful functions which can be added to the
+[alphavantagepf](https://derekholmes0.github.io/alphavantagepf/index.html)
+Shiny Interface. Many functions are already included in that package,
+but as the package includes the ability to add new functions (see [New
+Functionality
+Vignette](https://derekholmes0.github.io/alphavantagepf/articles/ShinyApp_4_New_Functionality.html),
+it is useful to have a place to store experimental or specialized
+functions.
+
+This repository does just that. Use of these functions assumes an
+existing (and data-populated) instance of the
+[alphavantagepf](https://derekholmes0.github.io/alphavantagepf/index.html)
+package.
+
+To download these functions, use the following
+
+    pak::pak("derekholmes0/avpfShinyFuncs")
+    require(avpfShinyFuncs)
+
+To add to the `av_runShiny()` ecosystem prior to , just do the
+following:
+
+    require(alphavantagepf)
+    require(avpfshinyFuncs)
+    av_load_shinydata();
+    av_runShiny_addFunctions()
+    av_runShiny()
+
+Alternatively, download the function files into your own user directory,
+and add that directory to the “User Function Directory” box on the
+<span style="border: 1px solid #000000; padding: 2px 6px;">AVOPTS</span>
+tab.
+
+## Function List
+
+The following table shows which functions are in which files:
+
+| AV Command | Ready? | File | Description |
+|:--:|:--:|:--:|:---|
+| RCOR | – | `Correlations.R` | Rolling Correlation studies |
+| OLAST | – | `eq_opts.r` | Table of Last downloaded options per ticker |
+| GPIV | Needs IV surface | `eq_opts.r` | Graph implied volatilities |
+| GPIVS | Needs IV Surface | `eq_opts.R` | Graph Implied Volatilite Spreads |
