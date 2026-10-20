@@ -1,6 +1,6 @@
 Package: avpfshinyFuncs
 Title: Alphavantage Financial Data Shiny Interface additional functions
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Derek", "Holmes", email = "derek@derekholmes.com", role = c("aut", "cre", "cph"))
     )
@@ -23,4 +23,4 @@ LazyData: true
 VignetteBuilder: knitr
 URL: https://github.com/derekholmes0/avpfshinyFuncs, https://derekholmes0.github.io/avpfshinyFuncs/
 BugReports: https://github.com/derekholmes0/avpfshinyFuncs/issues
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1

@@ -1,6 +1,6 @@
-#' rolling_correlations
+#' av_rolling_correlations
 #'
-#' @name rolling_correlations
+#' @name av_rolling_correlations
 #' @title Rolling correlation analysis
 #' @description Rolling correlation analysis
 #' @param todo Data structure containing  command and assets
@@ -14,8 +14,11 @@
 #' @importFrom FinanceGraphs fgts_dygraph
 #' @importFrom stats cor quantile
 #' @export
-rolling_correlations <- function(todo,rv) {
+av_rolling_correlations <- function(todo,rv) {
   symbol=rtn=adjusted_close=timestamp=var1=var2=rtn1=rtn2=rcorr=NULL
+  if( is.character(todo) && todo=="signature" ) {
+    return(list("RCOR","av_rolling_correlations","Rolling Correlations"))
+  }
   tickers_to_get=strsplit(rv$assetline,";")[[1]]
   roll_window <- fcoalesce(as.numeric(rv$todoargs),22) # default to 22 day rolling correlation
   if(length(tickers_to_get)<3) { 
